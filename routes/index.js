@@ -5,21 +5,21 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
-
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'Contact' });
 });
-
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Projects' });
 });
-
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Services' });
+/* GET services page. */
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Services' });
 });
-
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'About' });
+/* GET projects page. */
+router.get('/projects', function(req, res, next) {
+  res.render('projects', { title: 'About' });
 });
 
 module.exports = router;
